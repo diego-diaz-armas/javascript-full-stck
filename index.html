@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    
+    input {
+        /*width:100%;*/
+        width:30%;
+        padding:12px 20px;/*alto ancho*/
+        box-sizing:border-box;
+        margin:10px 0px;
+        border:5px solid red;/*color del borde de los input*/
+        border-radius:10px 10px 15px 20px;
+        background:blue;
+        color:white;
+    }
+    /*seudo clase input focus*/
+    input:focus{
+        border:5px solid yellowgreen;/*color del borde de los input*/ 
+    }
+    html{
+        background:gray;
+    }
+   #edad{
+    font-size:25px;
+    background-color:blueviolet;
+    text-align:center;
+    color: azure;/*color de la letra*/
+    margin-left:20px;
+    }
+    label{
+        margin-left:10px;
+    }
+    
+  </style>
+  <title>nombre pestania web</title>
+</head>
+
+<body>
+            <h1>formularios estiizados con css3</h1>
+            <div>
+                <form action="http://127.0.0.1:5500/" metodo="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="escribir nombre" />
+                    <br></br>
+                    <label for="apellido">apellido:</label>
+                    <input type="texto" name="apellido" id="apellido"placeholder="escribir apellido"/>
+                    <br></br>
+                    <label for="edad">edad:</label>
+                    <input type="number" name="edad" id="edad" placeholder="escribir edad"/>
+                </form>
+            </div>
+</body>
+
+
+</html>
