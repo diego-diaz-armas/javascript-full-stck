@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <style>
-    
+    #btn{
+        background-color:#4caf50;
+        border:none;
+        color:azure;
+        padding:12px 32px;
+        text-decoration: none;
+        margin: 4px 0px;
+    }
     input {
         /*width:100%;*/
         width:30%;
@@ -17,13 +24,33 @@
         border-radius:10px 10px 15px 20px;
         background:blue;
         color:white;
+       
+
+
     }
     /*seudo clase input focus*/
     input:focus{
         border:5px solid yellowgreen;/*color del borde de los input*/ 
     }
     html{
+        text-align: center;
         background:gray;
+    }
+    ::placeholder{
+        color:aqua;
+    }
+
+    #nombre{
+        background-image:  url(/pngegg.png)  ;
+        background-size:20px ;
+        background-repeat: no-repeat;
+        background-position: 300px 10px;
+    }
+    #apellido{
+        background-image:  url(/pngegg.png)  ;
+        background-size:20px ;
+        background-repeat: no-repeat;
+        background-position: 300px 10px;
     }
    #edad{
     font-size:25px;
@@ -31,17 +58,30 @@
     text-align:center;
     color: azure;/*color de la letra*/
     margin-left:20px;
+    background-image:  url(/pngegg.png)  ;
+        background-size:20px ;
+        background-repeat: no-repeat;
+        background-position: 20px 10px;
     }
     label{
         margin-left:10px;
     }
-    
+    #boton{
+        margin-left:70px;
+        padding:5px 50px;
+        background-color: green;
+    }
+    #pais{
+        height:30px;
+    }
   </style>
   <title>nombre pestania web</title>
 </head>
 
 <body>
-            <h1>formularios estiizados con css3</h1>
+            <h1>formularios estilizados con css3</h1>
+            <br>
+            <br>
             <div>
                 <form action="http://127.0.0.1:5500/" metodo="post">
                     <label for="nombre">Nombre:</label>
@@ -52,8 +92,21 @@
                     <br></br>
                     <label for="edad">edad:</label>
                     <input type="number" name="edad" id="edad" placeholder="escribir edad"/>
+                    <br>
+                    <button type="submit" id="btn" >enviar</button>
+                    <br>
+                    <br>
+                    <label for="pais">Elija su pais :</labelfor>
+                    <select name="pais" id="pais">
+                        <option disabled>pais</option><!--selected o hidden-->
+                        <option>uruguay</option>
+                        <option>brazil</option>
+                        <option>argentina</option>
+                        <option>mexico</option>
+                    </select>
                 </form>
             </div>
+            
 </body>
 
 
