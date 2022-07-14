@@ -16,7 +16,8 @@
     }
     input {
         /*width:100%;*/
-        width:30%;
+        
+        width:70%;
         padding:12px 20px;/*alto ancho*/
         box-sizing:border-box;
         margin:10px 0px;
@@ -24,33 +25,37 @@
         border-radius:10px 10px 15px 20px;
         background:blue;
         color:white;
-       
-
-
     }
+
     /*seudo clase input focus*/
     input:focus{
         border:5px solid yellowgreen;/*color del borde de los input*/ 
     }
+    h1{
+        text-align:center;
+    }
     html{
-        text-align: center;
         background:gray;
     }
     ::placeholder{
         color:aqua;
+    }
+    label{
+        padding:10px 10px 20px;
+        
     }
 
     #nombre{
         background-image:  url(/pngegg.png)  ;
         background-size:20px ;
         background-repeat: no-repeat;
-        background-position: 300px 10px;
+        background-position: 190px 10px;
     }
     #apellido{
         background-image:  url(/pngegg.png)  ;
         background-size:20px ;
         background-repeat: no-repeat;
-        background-position: 300px 10px;
+        background-position: 190px 10px;
     }
    #edad{
     font-size:25px;
@@ -61,12 +66,13 @@
     background-image:  url(/pngegg.png)  ;
         background-size:20px ;
         background-repeat: no-repeat;
-        background-position: 20px 10px;
+        background-position: 10px 10px;
     }
     label{
-        margin-left:10px;
+        margin-left:0px;
     }
-    #boton{
+    #btn{
+        cursor: pointer;
         margin-left:70px;
         padding:5px 50px;
         background-color: green;
@@ -74,7 +80,16 @@
     #pais{
         height:30px;
     }
+    .container{
+        background-color:darkgrey;
+        padding-bottom:20px;
+        width:30%;
+        
+        margin-left: 34%;
+      padding-left:30px;
+    }
   </style>
+  <link rel="icon" href="/pngegg.png">
   <title>nombre pestania web</title>
 </head>
 
@@ -82,7 +97,7 @@
             <h1>formularios estilizados con css3</h1>
             <br>
             <br>
-            <div>
+            <div class="container">
                 <form action="http://localhost:5000/" metodo="post">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre" placeholder="escribir nombre" required />
