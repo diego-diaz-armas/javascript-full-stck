@@ -1,0 +1,25 @@
+{
+  "name": "javascript-full-stck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego-diaz-armas/javascript-full-stck.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego-diaz-armas/javascript-full-stck/issues"
+  },
+  "homepage": "https://github.com/diego-diaz-armas/javascript-full-stck#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "expressjs": "^1.0.1",
+    "lodash": "^4.17.21"
+  }
+}
