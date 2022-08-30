@@ -1,0 +1,62 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>platzi</title>
+</head>
+
+<body>
+    <h1>juego piedra papel tijeras </h1>
+    <p>elija 1 piedra, 2 papel, 3 es tijera</p>
+   <script>
+    let jugador =0;
+    let pc =0;
+
+     /* Math.floor parentesis 3.1544142 parentesis
+     esto le quita los decimales*/
+     //numero aliatorio de pc
+     let min=1;
+     let max=3;
+     pc= Math.floor(Math.random()*(max-min+1)+min);//te da numeros entr 1 y 3 random
+
+    jugador = prompt("1= piedra, 2 =papel, 3= tijera" );
+    //alert("elegistes: " + jugador);
+
+    if(jugador ==1 ){
+      alert("elegistes: piedra  " + jugador);
+    }else if(jugador ==2 ){
+      alert("elegistes: papel " + jugador);
+    }else if(jugador ==3 ){
+      alert("elegistes: tijera " + jugador);
+    }else{
+      alert("no elejistes ninguna opcion");
+    }
+   
+    //eleccion pc 
+    if(pc==1){
+      alert("pc elijio piedra");
+    }else if(pc == 2){
+      alert("pc elijio papel");
+    }else if(pc == 3){
+      alert("pc elijio tijeras");
+    }
+    //combate
+    if(pc == jugador){
+      alert("empate");
+    }else if(jugador == 1 && pc== 3){
+      alert("ganaste");
+    }else if(jugador==2 && pc==1){
+      alert("ganaste");
+    }else if(jugador==3 && pc==2){
+      alert("ganaste");
+    }else{
+      alert("perdiste");
+    }
+   </script>
+
+</body>
+
+</html>
